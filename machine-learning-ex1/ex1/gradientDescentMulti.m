@@ -16,7 +16,12 @@ for iter = 1:num_iters
     % Hint: While debugging, it can be useful to print out the values
     %       of the cost function (computeCostMulti) and gradient here.
     %
-    
+    J_history(iter) = computeCostMulti(X, y, theta);
+    t = zeros(size(theta),1);
+    for n1 = 1:size(theta)
+    t(n1) = theta(n1) - alpha*(1/m)*((X*theta - y)'*X(:, n1));
+    end
+    theta = t;
 
 
 
