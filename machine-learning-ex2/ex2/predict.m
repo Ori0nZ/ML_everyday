@@ -14,7 +14,13 @@ p = zeros(m, 1);
 %               your learned logistic regression parameters. 
 %               You should set p to a vector of 0's and 1's
 %
-
+for i=1:size(X)
+  if(theta'*X(i,:)')>=0
+    m(i) = 1;
+  else 
+    m(i) = 0;
+  end
+end 
 
 
 
