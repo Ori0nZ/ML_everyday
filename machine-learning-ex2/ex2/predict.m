@@ -16,9 +16,9 @@ p = zeros(m, 1);
 %
 for i=1:size(X)
   if(theta'*X(i,:)')>=0
-    m(i) = 1;
+    p(i) = 1;
   else 
-    m(i) = 0;
+    p(i) = 0;
   end
 end 
 
