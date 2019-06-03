@@ -38,7 +38,11 @@ error_val = zeros(length(lambda_vec), 1);
 %       end
 %
 %
-
+for c=1:length(lambda_vec)
+    theta = trainLinearReg(X, y, lambda_vec(c));
+    error_train(c) = linearRegCostFunction(X, y, theta, 0);
+    error_val(c) = linearRegCostFunction(Xval, yval, theta, 0);
+end
 
 
 

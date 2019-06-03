@@ -21,7 +21,7 @@ n = size(theta,1);
 %
 J = (1/(2*m))*sum((X*theta - y).^2) + (lambda/(2*m))*theta(2:n,:)'*theta(2:n,:);
 grad(1) = (1/m)*((X*theta - y)'*X(:,1));
-grad(2:n,1) = (1/m)*X(:,2:n)'*(X*theta - y) + (lambda/m)*theta(2:n,1);
+grad(2:n,1) = (1/m)*X(:,2:n)'*(X*theta - y) + (lambda/m)*theta(2 :n,1);
 
 
 
