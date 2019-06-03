@@ -7,7 +7,7 @@ testX = data_lab(751:1000, 1);
 testY = data_lab(751:1000, 2);
 theta = [0;0];
 Inner = 150000;
-alpha = 10^-5;
+alpha = 1*10^-5;
 [cost, theta] = costFuntion(X, y , theta, alpha, Inner);
 fprintf("%f", cost);
 theta
