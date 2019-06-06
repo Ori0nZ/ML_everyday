@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "/Users/infosec/ml_everyday"
+		},
+		{
+			"path": "/Users/infosec/Downloads/easy_ham"
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"files.autoSaveDelay": 10
+	}
+}

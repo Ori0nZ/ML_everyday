@@ -1,0 +1,20 @@
+
+SwiftUI is so amazing!
+
+If you missed my last email,
+ SwiftUI is a new framework Apple unveiled
+  where we can easily build user interfaces with Swift code.
+
+Maybe it's all the hype, maybe I'm just excited that I
+ can start teaching programmatic UI to beginners, maybe
+  i'm just delirious from staying up all night digging into SwiftUI...
+
+Either way, I think this is going to be game changing 
+to the way we build user interfaces for apps. That's why 
+I want to get ahead of it and start creating tutorials for it.
+
+Here's the first video in a series of tutorials on SwiftUI:
+Click here to watch it on YouTube!
+
+
+
