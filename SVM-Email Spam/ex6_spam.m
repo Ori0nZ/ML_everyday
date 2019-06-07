@@ -39,7 +39,7 @@ yTest = [];
 myFolder = './spam/';
 addpath(myFolder);
 files = dir(myFolder);
-for c=3:4
+for c=3:10
 % Extract Features
 file_contents = readFile(files(c).name);
 word_indices  = processEmail(file_contents);
@@ -51,7 +51,7 @@ fprintf('\nloading  email ..... \n');
 myFolder = './easy_ham/';
 addpath(myFolder);
 files = dir(myFolder);
-for c=3:4
+for c=3:10
 % Extract Features
 file_contents = readFile(files(c).name);
 word_indices  = processEmail(file_contents);
