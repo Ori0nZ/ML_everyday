@@ -39,9 +39,10 @@ Theta_grad = zeros(size(Theta));
 %        Theta_grad - num_users x num_features matrix, containing the 
 %                     partial derivatives w.r.t. to each element of Theta
 %
-J = (1/2)*sum(R'*((X*Theta'- Y).^2));
-X_grad = sum(R'*((X*Theta' - Y)*Theta_grad));
-Theta_grad = sum(R*((X*Theta' - Y)'*X));
+J = (1/2)*sum(sum((R.*(X*Theta'- Y)).^2));
+X_grad = (R.*(X*Theta' - Y))*Theta_grad ;
+Theta_grad = (R.*(X*Theta' - Y))'*X ;
+grad = [X_grad ; Theta_grad];
 
 
 
